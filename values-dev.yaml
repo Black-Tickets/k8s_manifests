@@ -32,6 +32,12 @@ chatbot:
   replicaCount: 1
   image:
     tag: v1.0.0
+  nfs:
+    enabled: true
+    pvcName: nfs-pvc
+    mountPath: /app/data
+    size: 10Gi
+    volumeName: nfs-pv-dev
 
 # PostgreSQL
 postgres:
