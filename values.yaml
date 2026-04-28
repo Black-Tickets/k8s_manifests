@@ -143,3 +143,14 @@ gateway:
 httproute:
   enabled: true
   parentGateway: ticketing-gateway
+
+# Secrets
+secrets:
+  enabled: true
+  name: ticketing-secrets
+  postgresPassword: "CHANGE_ME_SECURE_PASSWORD"
+  jwtSecret: "CHANGE_ME_SECURE_JWT_SECRET_MIN_64_CHARS"
+  adminEmail: "admin@bookish.com"
+  adminPassword: "SecureAdminPass123!@#"
+  userEmail: "user@example.com"
+  userPassword: "CHANGE_ME_USER_PASSWORD"
